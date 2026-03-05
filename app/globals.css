@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #00E54A;
+  --color-primary-dark: #00e54a;
+  --color-secondary: #212B3E;
+  /* Dark blue/slate for topbar and sidebar */
+  --color-bg-dark: #000000;
+  /* Black background for hero */
+
+  /* Typography Variables - One place to change everything */
+  /* Do NOT redefine font variables here; we take them from layout.tsx body className */
+  --size-heading: 30px;
+  --weight-heading: 600;
+  --size-small-heading: 24px;
+  --weight-small-heading: 500;
+  --size-para: 18px;
+  --weight-para: 400;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    /* This var comes from layout.tsx inter.variable */
+    font-family: var(--font-inter) !important;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Headings: Managed in one place via variables */
+  h1,
+  h2,
+  .main-heading {
+    font-family: inherit;
+    font-size: var(--size-heading);
+    font-weight: var(--weight-heading);
+  }
+
+  /* Small Headings / Labels: Managed in one place via variables */
+  h3,
+  h4,
+  .small-heading {
+    font-family: inherit;
+    font-size: var(--size-small-heading);
+    font-weight: var(--weight-small-heading);
+  }
+
+  /* Paragraphs: Managed in one place via variables */
+  p,
+  .para {
+    font-family: inherit;
+    font-size: var(--size-para);
+    font-weight: var(--weight-para);
+    line-height: 1.6;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .container-custom {
+    @apply max-w-[1440px] mx-auto px-4 md:px-8;
+  }
+
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
 }
