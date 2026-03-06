@@ -24,7 +24,7 @@ export default function VyneShop() {
                     <div data-aos="fade-right" className="w-full flex justify-center">
                         <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden shadow-xl">
                             <video
-                                src="https://cdn.clinicalvisuals.com/medical/gynhealth/obstetrics.webm"
+                                src="https://cdn.clinicalvisuals.com/medical/vyne/shortclips/vyne_short_02.webm"
                                 className="w-full h-full object-cover"
                                 autoPlay
                                 muted
@@ -42,33 +42,33 @@ export default function VyneShop() {
 
                         <div className="flex flex-col gap-4">
                             {/* Card 1 */}
-                            <div data-aos="fade-up" data-aos-delay="100" className="bg-white rounded-xl p-4 shadow-lg flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                                <img src="/home/online-1.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg" />
-                                <div className="flex-1 pb-2 sm:pb-0">
+                            <div data-aos="fade-up" data-aos-delay="100" className="bg-white rounded-xl p-4 shadow-lg flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                                <img src="/home/online-1.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg shrink-0" />
+                                <div className="flex-1 pb-2 sm:pb-0 text-center sm:text-left">
                                     <h3 className="font-medium text-gray-800 text-[20px] mb-1">The medical device store</h3>
-                                    <p className="text-gray-500 text-[16px] leading-snug">
+                                    <p className="text-gray-500 text-[15px] leading-snug">
                                         Browse & buy thousands of medical devices, all available with next day delivery, or free delivery when you spend over £50.
                                     </p>
                                 </div>
                             </div>
 
                             {/* Card 2 */}
-                            <div data-aos="fade-up" data-aos-delay="200" className="bg-white rounded-xl p-4 shadow-lg flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                                <img src="/home/online-2.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg" />
-                                <div className="flex-1 pb-2 sm:pb-0">
+                            <div data-aos="fade-up" data-aos-delay="200" className="bg-white rounded-xl p-4 shadow-lg flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                                <img src="/home/online-2.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg shrink-0" />
+                                <div className="flex-1 pb-2 sm:pb-0 text-center sm:text-left">
                                     <h3 className="font-medium text-gray-800 text-[20px] mb-1">1000s of products</h3>
-                                    <p className="text-gray-500 text-[16px] leading-snug">
+                                    <p className="text-gray-500 text-[15px] leading-snug">
                                         Whether you're popping up for a trip, or you'd just like to give another device a go, Vyne Shop has a huge range of options to choose from.
                                     </p>
                                 </div>
                             </div>
 
                             {/* Card 3 */}
-                            <div data-aos="fade-up" data-aos-delay="300" className="bg-white rounded-xl p-4 shadow-lg flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                                <img src="/home/online-3.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg" />
-                                <div className="flex-1 pb-2 sm:pb-0">
+                            <div data-aos="fade-up" data-aos-delay="300" className="bg-white rounded-xl p-4 shadow-lg flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                                <img src="/home/online-3.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg shrink-0" />
+                                <div className="flex-1 pb-2 sm:pb-0 text-center sm:text-left">
                                     <h3 className="font-medium text-gray-800 text-[20px] mb-1">Speedy service</h3>
-                                    <p className="text-gray-500 text-[16px] leading-snug">
+                                    <p className="text-gray-500 text-[15px] leading-snug">
                                         Need to get something quickly? Order before 2pm on weekdays and you'll have the option to choose next day delivery at checkout.
                                     </p>
                                 </div>
@@ -79,11 +79,11 @@ export default function VyneShop() {
                 </div>
 
                 {/* CTAs Centered Bottom */}
-                <div data-aos="fade-up" data-aos-delay="200" className="flex justify-center items-center gap-4 mt-16 pt-4 pb-4">
-                    <button className="bg-primary hover:bg-primary-dark text-black px-10 py-3 rounded-md font-medium transition-colors shadow-sm text-sm">
+                <div data-aos="fade-up" data-aos-delay="200" className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-16 pt-4 pb-4">
+                    <button className="bg-primary hover:bg-primary-dark text-black px-10 py-3 rounded-md font-medium transition-colors shadow-sm text-sm w-full sm:w-auto justify-center">
                         Shop Now
                     </button>
-                    <button className="bg-transparent border border-white text-white hover:bg-white/10 px-10 py-3 rounded-md font-medium transition-colors text-sm">
+                    <button className="bg-transparent border border-white text-white hover:bg-white/10 px-10 py-3 rounded-md font-medium transition-colors text-sm w-full sm:w-auto justify-center">
                         Shop by brand
                     </button>
                 </div>

@@ -55,7 +55,7 @@ function TrustpilotCarousel() {
     const swiperRef = useRef<SwiperType | null>(null);
 
     return (
-        <div className="w-full bg-[#2F4365] border border-[#00E54A] rounded-2xl p-6 lg:p-8 flex flex-col lg:flex-row items-start gap-8 mb-16 shadow-lg shadow-black/20">
+        <div data-aos="fade-up" data-aos-delay="200" className="w-full bg-[#2F4365] border border-[#00E54A] rounded-2xl p-6 lg:p-8 flex flex-col lg:flex-row items-start gap-8 mb-16 shadow-lg shadow-black/20">
             {/* Left: Excellent rating */}
             <div className="flex flex-col items-start gap-1.5 min-w-[140px] shrink-0 border-r border-gray-700/60 pr-8">
                 <span className="text-white font-bold text-xl">Excellent</span>
@@ -145,7 +145,7 @@ export default function Footer() {
             <div className="container-custom relative z-10">
 
                 {/* Top Row */}
-                <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8 mb-16">
+                <div data-aos="fade-up" className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8 mb-16">
 
                     {/* Logo & Description */}
                     <div className="max-w-xs flex flex-col pt-2">
@@ -233,11 +233,11 @@ export default function Footer() {
                         </form>
 
                         {/* Awards Placeholders */}
-                        <div className="flex items-center gap-3 mt-12">
-                            <img src="/home/award-1.png" alt="Award 1" className="w-23 h-23 object-contain" />
-                            <img src="/home/award-2.png" alt="Award 2" className="w-23 h-23 object-contain" />
-                            <img src="/home/award-3.png" alt="Award 3" className="w-23 h-23 object-contain" />
-                            <img src="/home/award-4.png" alt="Award 4" className="w-23 h-23 object-contain" />
+                        <div className="flex lg:flex-nowrap flex-wrap lg:items-center items-start justify-start gap-3 mt-12">
+                            <img src="/home/award-1.png" alt="Award 1" className="w-24 h-24 object-contain" />
+                            <img src="/home/award-2.png" alt="Award 2" className="w-24 h-24 object-contain" />
+                            <img src="/home/award-3.png" alt="Award 3" className="w-24 h-24 object-contain" />
+                            <img src="/home/award-4.png" alt="Award 4" className="w-24 h-24 object-contain" />
                         </div>
                     </div>
 

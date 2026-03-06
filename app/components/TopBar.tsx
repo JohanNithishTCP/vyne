@@ -6,7 +6,7 @@ export default function TopBar() {
         <div className="bg-secondary text-white py-2 text-sm w-full">
             <div className="container-custom flex flex-col sm:flex-row justify-between items-center gap-4">
                 {/* Left Links */}
-                <div className="flex items-center gap-6">
+                <div className="hidden lg:flex flex-wrap items-center justify-center sm:justify-start gap-4 md:gap-6">
                     <Link href="#" className="hover:text-primary transition-colors">About Vyne</Link>
                     <Link href="#" className="hover:text-primary transition-colors">Support & advice</Link>
                     <Link href="#" className="hover:text-primary transition-colors">Help centre</Link>
@@ -14,9 +14,9 @@ export default function TopBar() {
                 </div>
 
                 {/* Right Info & Icons */}
-                <div className="flex items-center gap-6">
+                <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
                     <div className="flex items-center gap-2">
-                        <span className="font-semibold text-xs border-b border-white hover:border-primary transition-colors cursor-pointer">Excellent</span>
+                        <span className="font-semibold text-[14px] border-b border-white hover:border-primary transition-colors cursor-pointer">Excellent</span>
                         {/* Trustpilot stars placeholder */}
                         <div className="flex gap-0.5">
                             {[...Array(5)].map((_, i) => (
@@ -27,6 +27,7 @@ export default function TopBar() {
                                 </div>
                             ))}
                         </div>
+                        <img src="/home/trustpilot.svg" alt="Trustpilot" width="76" />
                     </div>
 
                     <div className="flex items-center gap-4 border-l border-white/20 pl-4">

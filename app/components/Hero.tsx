@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 
 const bannerVideos = [
-    "https://cdn.clinicalvisuals.com/medical/gynhealth/gynecology.webm",
-    "https://cdn.clinicalvisuals.com/medical/gynhealth/obstetrics.webm",
-    "https://cdn.clinicalvisuals.com/medical/gynhealth/infertility.webm",
-    "https://cdn.clinicalvisuals.com/medical/gynhealth/breast_symptoms.webm",
+    "https://cdn.clinicalvisuals.com/medical/vyne/landingpage/vyne_01.webm",
+    "https://cdn.clinicalvisuals.com/medical/vyne/landingpage/vyne_02.webm",
+    "https://cdn.clinicalvisuals.com/medical/vyne/landingpage/vyne_03.webm",
+    "https://cdn.clinicalvisuals.com/medical/vyne/landingpage/vyne_04.webm",
 ];
 
 export default function Hero() {
@@ -16,7 +16,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative bg-black text-white w-full h-screen flex items-center overflow-hidden">
+        <section className="relative bg-black text-white w-full h-screen flex items-end pb-24 md:pb-32 overflow-hidden">
             {/* Video Background */}
             <div className="absolute inset-0 z-0">
                 <video
@@ -33,7 +33,7 @@ export default function Hero() {
             </div>
 
             <div className="container-custom w-full relative z-10">
-                <div className="max-w-2xl text-left">
+                <div className="max-w-3xl mx-auto text-center">
                     <h1
                         data-aos="fade-up"
                         data-aos-delay="100"
@@ -44,7 +44,7 @@ export default function Hero() {
                     <p
                         data-aos="fade-up"
                         data-aos-delay="250"
-                        className="text-white text-lg md:text-[18px] max-w-lg mt-6 font-medium [text-shadow:8px_4px_7px_rgba(0,0,0,0.6)]"
+                        className="text-white text-lg md:text-[18px] max-w-lg mx-auto mt-6 font-medium [text-shadow:8px_4px_7px_rgba(0,0,0,0.6)]"
                     >
                         Let us take care of <br className="hidden md:block" /> your continence, ostomy and wound care products.
                     </p>

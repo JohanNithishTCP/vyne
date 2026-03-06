@@ -27,33 +27,33 @@ export default function VynePrescriptions() {
 
                         <div className="flex flex-col gap-4">
                             {/* Card 1 */}
-                            <div data-aos="fade-up" data-aos-delay="100" className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 flex items-center gap-6 hover:shadow-md transition-shadow">
-                                <img src="/home/prescription-1.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg" />
-                                <div>
+                            <div data-aos="fade-up" data-aos-delay="100" className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 flex flex-col sm:flex-row items-center sm:items-start gap-6 hover:shadow-md transition-shadow">
+                                <img src="/home/prescription-1.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg shrink-0" />
+                                <div className="text-center sm:text-left">
                                     <h3 className="font-medium text-gray-800 text-[20px] mb-1">Home delivery you can trust</h3>
-                                    <p className="text-gray-500 text-[16px] leading-snug">
+                                    <p className="text-gray-500 text-[15px] leading-snug">
                                         Do you have a repeat prescription for a continence or stoma item? We'll deliver your items directly to your door, completely free.
                                     </p>
                                 </div>
                             </div>
 
                             {/* Card 2 */}
-                            <div data-aos="fade-up" data-aos-delay="200" className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 flex items-center gap-6 hover:shadow-md transition-shadow">
-                                <img src="/home/prescription-2.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg" />
-                                <div>
+                            <div data-aos="fade-up" data-aos-delay="200" className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 flex flex-col sm:flex-row items-center sm:items-start gap-6 hover:shadow-md transition-shadow">
+                                <img src="/home/prescription-2.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg shrink-0" />
+                                <div className="text-center sm:text-left">
                                     <h3 className="font-medium text-gray-800 text-[20px] mb-1">Manage everything online</h3>
-                                    <p className="text-gray-500 text-[16px] leading-snug">
+                                    <p className="text-gray-500 text-[15px] leading-snug">
                                         Place your prescription orders using Vyne Online - the easiest way to manage your NHS prescriptions. Order at a time and place that suits you, and even reorder in just 2 clicks!
                                     </p>
                                 </div>
                             </div>
 
                             {/* Card 3 */}
-                            <div data-aos="fade-up" data-aos-delay="300" className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 flex items-center gap-6 hover:shadow-md transition-shadow">
-                                <img src="/home/prescription-3.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg" />
-                                <div>
+                            <div data-aos="fade-up" data-aos-delay="300" className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 flex flex-col sm:flex-row items-center sm:items-start gap-6 hover:shadow-md transition-shadow">
+                                <img src="/home/prescription-3.png" alt="Vyne Prescriptions" className="w-[120px] object-contain rounded-lg shrink-0" />
+                                <div className="text-center sm:text-left">
                                     <h3 className="font-medium text-gray-800 text-[20px] mb-1">Dedicated support</h3>
-                                    <p className="text-gray-500 text-[16px] leading-snug">
+                                    <p className="text-gray-500 text-[15px] leading-snug">
                                         If you'd prefer, you can order over the telephone with our lovely Customer Care team. They have decades of experience and are here to provide all the support & advice you need along the way.
                                     </p>
                                 </div>
@@ -65,7 +65,7 @@ export default function VynePrescriptions() {
                     <div data-aos="fade-left" className="order-1 lg:order-2 w-full flex justify-center">
                         <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden shadow-xl">
                             <video
-                                src="https://cdn.clinicalvisuals.com/medical/gynhealth/obstetrics.webm"
+                                src="https://cdn.clinicalvisuals.com/medical/vyne/shortclips/vyne_short_01.webm"
                                 className="w-full h-full object-cover"
                                 autoPlay
                                 muted
@@ -78,11 +78,11 @@ export default function VynePrescriptions() {
                 </div>
 
                 {/* CTAs Centered Bottom */}
-                <div data-aos="fade-up" data-aos-delay="200" className="flex justify-center items-center gap-4 mt-16 pb-8">
-                    <button className="bg-primary hover:bg-primary-dark text-black px-8 py-3 rounded-md font-medium transition-colors shadow-sm text-sm">
+                <div data-aos="fade-up" data-aos-delay="200" className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-16 pb-8">
+                    <button className="bg-primary w-full sm:w-auto justify-center hover:bg-primary-dark text-black px-8 py-3 rounded-md font-medium transition-colors shadow-sm text-sm">
                         Register Online
                     </button>
-                    <button className="bg-transparent border border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-3 rounded-md font-medium transition-colors text-sm">
+                    <button className="bg-transparent w-full sm:w-auto justify-center border border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-3 rounded-md font-medium transition-colors text-sm">
                         Find Out More
                     </button>
                 </div>

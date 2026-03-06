@@ -34,6 +34,10 @@ const valuesItems = [
         icon: "/home/values-3.svg",
         body: "The easiest way to order your prescription continence, stoma, and wound care appliances, all online, all completely free, with Vyne Online.",
     },
+    {
+        icon: "/home/values-4.svg",
+        body: "We value compassionate care, putting patients’ needs and well-being at the heart of everything we do.",
+    },
 ];
 
 

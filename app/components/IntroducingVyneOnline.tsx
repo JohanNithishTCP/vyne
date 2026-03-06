@@ -125,11 +125,11 @@ export default function IntroducingVyneOnline() {
                         </p>
 
                         {/* Feature Cards Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6" data-aos="fade-up"
+                            data-aos-delay={150}>
                             {features.map((feature, idx) => (
                                 <div
-                                    data-aos="fade-up"
-                                    data-aos-delay={idx * 150}
+
                                     key={feature.id}
                                     onClick={() => handleCardClick(feature.id)}
                                     className={`bg-white rounded-xl p-6 text-center shadow-xl relative mt-4 sm:mt-0 cursor-pointer transition-all duration-300 border-[3px] h-full ${activeId === feature.id ? "border-primary scale-105 z-20" : "border-transparent scale-100"
@@ -169,12 +169,12 @@ export default function IntroducingVyneOnline() {
                         </div>
 
                         {/* CTAs */}
-                        <div className="mt-12 flex flex-col sm:flex-row justify-between items-center gap-6 pb-24 md:pb-0">
+                        <div className="mt-12 flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-6 pb-24 md:pb-0">
                             <button className="bg-primary hover:bg-primary-dark text-black px-8 py-3 rounded-md font-medium transition-colors shadow-sm text-sm shrink-0 w-full sm:w-auto">
                                 Find Out More
                             </button>
 
-                            <div className="flex items-center gap-4">
+                            <div className="flex justify-center items-center gap-4 w-full sm:w-auto">
                                 <img src="/home/store.png" alt="App Store" className="w-[250px] object-contain" />
                             </div>
                         </div>
@@ -184,7 +184,7 @@ export default function IntroducingVyneOnline() {
             </div>
 
             {/* White extended bg at the bottom so the phone mockup can overlap cleanly */}
-            <div className="absolute bottom-0 left-0 w-full h-32 md:h-[54%] bg-gray-50 z-0"></div>
+            <div className="absolute bottom-0 left-0 w-full h-32 md:h-[54%] bg-gray-100 z-0"></div>
         </section>
     );
 }
