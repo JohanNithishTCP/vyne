@@ -169,7 +169,7 @@ export default function Footer() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {/* Call Us */}
                             <div className="flex items-start gap-4">
-                                <Phone className="text-gray-400 mt-1" size={20} />
+                                {/* <Phone className="text-gray-400 mt-1" size={20} /> */}
                                 <div className="flex flex-col gap-2">
                                     <span className="bg-primary text-secondary text-[20px] font-bold px-3 py-1 rounded-lg w-max">Call us:</span>
                                     <div className="text-[13px]! text-gray-300">
@@ -181,7 +181,7 @@ export default function Footer() {
 
                             {/* We're open */}
                             <div className="flex items-start gap-4">
-                                <Calendar className="text-gray-400 mt-1" size={20} />
+                                {/* <Calendar className="text-gray-400 mt-1" size={20} /> */}
                                 <div className="flex flex-col gap-2">
                                     <span className="bg-primary text-secondary text-[20px] font-bold px-3 py-1 rounded-lg w-max">We're open:</span>
                                     <div className="text-[14px]! text-gray-300 leading-relaxed">
@@ -194,7 +194,7 @@ export default function Footer() {
 
                             {/* Email us */}
                             <div className="flex items-start gap-4">
-                                <Send className="text-gray-400 mt-1" size={20} />
+                                {/* <Send className="text-gray-400 mt-1" size={20} /> */}
                                 <div className="flex flex-col gap-2">
                                     <span className="bg-primary text-secondary text-[20px] font-bold px-3 py-1 rounded-lg w-max">Email us anytime:</span>
                                     <div className="text-[14px]!">

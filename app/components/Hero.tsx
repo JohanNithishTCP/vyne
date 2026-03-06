@@ -32,7 +32,7 @@ export default function Hero() {
                 {/* <div className="absolute inset-0 bg-black/40 z-10"></div> */}
             </div>
 
-            <div className="container-custom w-full relative z-10">
+            {/* <div className="container-custom w-full relative z-10">
                 <div className="max-w-3xl mx-auto text-center">
                     <h1
                         data-aos="fade-up"
@@ -49,7 +49,7 @@ export default function Hero() {
                         Let us take care of <br className="hidden md:block" /> your continence, ostomy and wound care products.
                     </p>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }
